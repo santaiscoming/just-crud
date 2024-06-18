@@ -1,9 +1,25 @@
+@import url('https://static.toss.im/tps/main.css');
+@import url('https://static.toss.im/tps/others.css');
+
 :root {
+  --primary-blue: #3182f6;
+
+  --text-title: #1e2633;
+  --text-gray: #8b95a1;
+  --text-white: #f9fafb;
+
+  /* for input tag */
+  --border: #b0b8c1;
+  --border-hover: #90c2ff;
+  --placeholder: #b0b8c1;
+
+  --header-z-index: 1000;
+
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -77,14 +93,24 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  font-family: 'Toss Product Sans';
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+  max-width: 386px;
 
+  width: 100dvh;
+  height: 100dvh;
+
+  margin: 0 auto;
+
+  overflow-x: hidden;
+
+  font-family: t;
+}
+/* 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -93,15 +119,15 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
