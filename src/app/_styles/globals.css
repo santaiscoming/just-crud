@@ -100,9 +100,7 @@
 
 html,
 body {
-  max-width: 386px;
-
-  width: 100dvh;
+  width: 100dvw;
   height: 100dvh;
 
   margin: 0 auto;
