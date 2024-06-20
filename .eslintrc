@@ -30,7 +30,7 @@
     "template-curly-spacing": ["error", "never"],
     "default-param-last": ["error"],
     "no-param-reassign": ["error"],
-    // "function-paren-newline": ["error", { "minItems": 3 }],
+    "function-paren-newline": ["error", { "minItems": 3 }],
     "arrow-parens": ["error", "always"],
     "arrow-body-style": ["off", "as-needed"], // 명시적 return이 필요한 경우가 있어서
     "implicit-arrow-linebreak": ["error", "beside"],
