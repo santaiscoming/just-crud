@@ -1,45 +1,31 @@
-.main {
-  max-width: 386px;
-}
-
-.headerContainer {
-  position: fixed;
-  top: 0;
-  z-index: var(--header-z-index);
-
-  height: 60px;
+.Container {
   width: 100%;
-
-  border-bottom: 1px solid var(--border-light);
+  height: 100%;
 }
 
-.headerWrapper {
-  width: 92%;
+.authArea {
+  width: auto;
   height: 100%;
-
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.titleArea {
-  height: 100%;
-  width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 }
 
-.title {
-  font-size: 20px;
+.login,
+.signup {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+
+  font-size: 16px;
   font-weight: 600;
 
-  color: var(--text-title);
+  color: var(--text-gray);
 }
 
 .postListContainer {
@@ -53,54 +39,24 @@
 .postList {
   display: flex;
   flex-direction: column;
+
   gap: 40px;
 }
 
-.postItem {
-  display: block;
+.writeBtn {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
 
-  width: 100%;
-  height: 100%;
-}
+  width: 60px;
+  height: 60px;
 
-.postItemWrapper {
-  width: 92%;
+  border-radius: 50%;
 
-  margin: 0 auto;
-}
-
-.postImgArea {
-}
-
-.postInfoArea {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
 
-  margin-top: 20px;
-}
-
-.postCategori {
-  font-size: 15px;
-
-  color: var(--text-gray);
-
-  line-height: 1.4;
-}
-
-.postTitle {
-  font-size: 18px;
-  font-weight: 600;
-
-  color: var(--text-title);
-
-  line-height: 1.4;
-}
-
-.postDate {
-  font-size: 15px;
-
-  color: var(--text-gray);
-
-  line-height: 1.4;
+  background-color: var(--text-white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }

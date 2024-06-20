@@ -1,0 +1,105 @@
+.modalContainer {
+  position: absolute;
+  z-index: 5000;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 360px;
+  height: 440px;
+
+  padding: 36px;
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--text-white);
+}
+
+/* Header */
+.headerWrapper {
+  width: 100%;
+  height: 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  font-size: 32px;
+  color: var(--text-title);
+}
+
+/* Form */
+.formWrapper {
+  margin-top: 40px;
+
+  width: 100%;
+}
+
+/* Input */
+.inputWrapper {
+  width: 100%;
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputTextBox {
+  width: 100%;
+  height: 48px;
+
+  border-radius: 8px;
+  border: 1px solid var(--border);
+
+  padding-left: 16px;
+
+  font-size: 14px;
+  color: var(--text-gray);
+  line-height: 48px;
+
+  cursor: text;
+}
+
+.inputTextBox:hover {
+  border: 2px solid var(--border-hover);
+}
+
+.inputTextBox:focus {
+  border: 2px solid var(--primary-blue);
+}
+
+.submitBtn {
+  width: 100%;
+  height: 48px;
+
+  border-radius: 8px;
+  border-color: var(--text-white);
+
+  color: var(--text-white);
+
+  font-size: 14px;
+  background: var(--primary-blue);
+  line-height: 48px;
+
+  cursor: pointer;
+}
