@@ -1,0 +1,99 @@
+.container {
+  width: 92%;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+.headerWrapper {
+  width: 100%;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  font-size: 40px;
+  color: var(--text-title);
+}
+
+/* Form */
+.formWrapper {
+  margin-top: 48px;
+
+  width: 100%;
+}
+
+/* Input */
+.inputWrapper {
+  width: 100%;
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputTextBox {
+  width: 100%;
+  height: 48px;
+
+  border-radius: 8px;
+  border: 1px solid var(--border);
+
+  padding-left: 16px;
+
+  font-size: 14px;
+  color: var(--text-gray);
+  line-height: 48px;
+
+  cursor: text;
+}
+
+.inputTextBox:hover {
+  border: 2px solid var(--border-hover);
+}
+
+.inputTextBox:focus {
+  border: 2px solid var(--primary-blue);
+}
+
+.submitBtn {
+  width: 100%;
+  height: 48px;
+
+  border-radius: 8px;
+  border-color: var(--text-white);
+
+  color: var(--text-white);
+
+  font-size: 14px;
+  background: var(--primary-blue);
+  line-height: 48px;
+
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 8px;
+
+  color: red;
+
+  font-size: 16px;
+  font-weight: 700;
+}
