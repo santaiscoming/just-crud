@@ -3,11 +3,19 @@
   height: 100dvh;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Header */
@@ -16,7 +24,7 @@
   height: 48px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 16px;
 
@@ -58,11 +66,11 @@
 }
 
 .inputTextBox:hover {
-  border: 1px solid var(--border-hover);
+  border: 2px solid var(--border-hover);
 }
 
 .inputTextBox:focus {
-  border: 1px solid var(--primary-blue);
+  border: 2px solid var(--primary-blue);
 }
 
 .submitBtn {

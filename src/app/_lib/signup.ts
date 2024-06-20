@@ -2,20 +2,6 @@
 import { redirect } from 'next/navigation';
 import { apiService } from '../_services/ApiService';
 
-/**
- * 1. intercept routing, parellel routing
- * 2. msw (nextjs 14와 호환문제)
- * - 게시글
- * - 로그인
- * - 회원가입
- * 3. server action
- * 서버에서 돌아가기에 formdata에 안전히 접근가능
- * endpoint 없이 직접 db에 접근가능
- * none hydration
- * progress inhencement (점진적 향상)
- * - JS를 불러오는 중이거나, 비활성화된 상태더라도 양식을 제출가능
- */
-
 const validateFormdata = (formData: FormData) => {
   const email = formData.get('email') as string;
   const nickname = formData.get('nickname') as string;
